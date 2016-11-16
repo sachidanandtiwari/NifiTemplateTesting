@@ -21,7 +21,144 @@
             <y>49.0</y>
           </position>
           <comments></comments>
-          <contents></contents>
+          <contents>
+            <processors>
+              <id>6b7ec9a1-0158-1000-0000-000000000000</id>
+              <parentGroupId>6b7cb0ac-0158-1000-0000-000000000000</parentGroupId>
+              <position>
+                <x>476.0</x>
+                <y>134.0</y>
+              </position>
+              <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                  <entry>
+                    <key>bootstrap.servers</key>
+                    <value>
+                      <name>bootstrap.servers</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>security.protocol</key>
+                    <value>
+                      <name>security.protocol</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>sasl.kerberos.service.name</key>
+                    <value>
+                      <name>sasl.kerberos.service.name</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>ssl.context.service</key>
+                    <value>
+                      <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                      <name>ssl.context.service</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>topic</key>
+                    <value>
+                      <name>topic</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>group.id</key>
+                    <value>
+                      <name>group.id</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>auto.offset.reset</key>
+                    <value>
+                      <name>auto.offset.reset</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>key-attribute-encoding</key>
+                    <value>
+                      <name>key-attribute-encoding</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>message-demarcator</key>
+                    <value>
+                      <name>message-demarcator</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>max.poll.records</key>
+                    <value>
+                      <name>max.poll.records</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>max-uncommit-offset-wait</key>
+                    <value>
+                      <name>max-uncommit-offset-wait</name>
+                    </value>
+                  </entry>
+                </descriptors>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                  <entry>
+                    <key>bootstrap.servers</key>
+                    <value>localhost:9092</value>
+                  </entry>
+                  <entry>
+                    <key>security.protocol</key>
+                    <value>PLAINTEXT</value>
+                  </entry>
+                  <entry>
+                    <key>sasl.kerberos.service.name</key>
+                  </entry>
+                  <entry>
+                    <key>ssl.context.service</key>
+                  </entry>
+                  <entry>
+                    <key>topic</key>
+                  </entry>
+                  <entry>
+                    <key>group.id</key>
+                  </entry>
+                  <entry>
+                    <key>auto.offset.reset</key>
+                    <value>latest</value>
+                  </entry>
+                  <entry>
+                    <key>key-attribute-encoding</key>
+                    <value>utf-8</value>
+                  </entry>
+                  <entry>
+                    <key>message-demarcator</key>
+                  </entry>
+                  <entry>
+                    <key>max.poll.records</key>
+                    <value>10000</value>
+                  </entry>
+                  <entry>
+                    <key>max-uncommit-offset-wait</key>
+                    <value>1 secs</value>
+                  </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+              </config>
+              <name>ConsumeKafka</name>
+              <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+              </relationships>
+              <style></style>
+              <type>org.apache.nifi.processors.kafka.pubsub.ConsumeKafka</type>
+            </processors>
+          </contents>
           <name>ReTest1</name>
         </processGroups>
         <processGroups>
@@ -39,5 +176,5 @@
       <name>ReTest</name>
     </processGroups>
   </snippet>
-  <timestamp>11/15/2016 20:55:09 PST</timestamp>
+  <timestamp>11/15/2016 20:57:41 PST</timestamp>
 </template>
