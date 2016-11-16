@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.0">
+  <description></description>
+  <groupId>26df8493-0158-1000-303b-500b667044e7</groupId>
+  <name>NewTest</name>
+  <snippet>
+    <processGroups>
+      <id>6b6bdccf-0158-1000-0000-000000000000</id>
+      <parentGroupId>26df8493-0158-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <comments></comments>
+      <contents>
+        <processGroups>
+          <id>6b6c27b3-0158-1000-0000-000000000000</id>
+          <parentGroupId>6b6bdccf-0158-1000-0000-000000000000</parentGroupId>
+          <position>
+            <x>230.0</x>
+            <y>39.0</y>
+          </position>
+          <comments></comments>
+          <contents></contents>
+          <name>NewTest1</name>
+        </processGroups>
+        <processGroups>
+          <id>6b6c4893-0158-1000-0000-000000000000</id>
+          <parentGroupId>6b6bdccf-0158-1000-0000-000000000000</parentGroupId>
+          <position>
+            <x>721.0</x>
+            <y>37.0</y>
+          </position>
+          <comments></comments>
+          <contents></contents>
+          <name>NewTest2</name>
+        </processGroups>
+      </contents>
+      <name>NewTest</name>
+    </processGroups>
+  </snippet>
+  <timestamp>11/15/2016 20:37:31 PST</timestamp>
+</template>
