@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.0">
+  <description></description>
+  <groupId>67ed48c5-0157-1000-8158-1ced1db8247c</groupId>
+  <name>Test</name>
+  <snippet>
+    <processGroups>
+      <id>6b5a082e-0158-1000-0000-000000000000</id>
+      <parentGroupId>67ed48c5-0157-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <comments></comments>
+      <contents></contents>
+      <name>Test</name>
+    </processGroups>
+  </snippet>
+  <timestamp>11/15/2016 20:17:29 PST</timestamp>
+</template>
