@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <template encoding-version="1.0">
   <description></description>
-  <groupId>6b6bdccf-0158-1000-9272-830acfb3d103</groupId>
+  <groupId>26df8493-0158-1000-303b-500b667044e7</groupId>
   <name>ReTest</name>
   <snippet>
     <processGroups>
       <id>6b7c8647-0158-1000-0000-000000000000</id>
-      <parentGroupId>6b6bdccf-0158-1000-0000-000000000000</parentGroupId>
+      <parentGroupId>26df8493-0158-1000-0000-000000000000</parentGroupId>
       <position>
         <x>0.0</x>
         <y>0.0</y>
@@ -32,12 +32,144 @@
             <y>53.0</y>
           </position>
           <comments></comments>
-          <contents></contents>
+          <contents>
+            <processors>
+              <id>6b8167a3-0158-1000-0000-000000000000</id>
+              <parentGroupId>6b7cc919-0158-1000-0000-000000000000</parentGroupId>
+              <position>
+                <x>374.0</x>
+                <y>114.0</y>
+              </position>
+              <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                  <entry>
+                    <key>Mongo URI</key>
+                    <value>
+                      <name>Mongo URI</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Mongo Database Name</key>
+                    <value>
+                      <name>Mongo Database Name</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Mongo Collection Name</key>
+                    <value>
+                      <name>Mongo Collection Name</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>ssl-context-service</key>
+                    <value>
+                      <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                      <name>ssl-context-service</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>ssl-client-auth</key>
+                    <value>
+                      <name>ssl-client-auth</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Mode</key>
+                    <value>
+                      <name>Mode</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Upsert</key>
+                    <value>
+                      <name>Upsert</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Update Query Key</key>
+                    <value>
+                      <name>Update Query Key</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Write Concern</key>
+                    <value>
+                      <name>Write Concern</name>
+                    </value>
+                  </entry>
+                  <entry>
+                    <key>Character Set</key>
+                    <value>
+                      <name>Character Set</name>
+                    </value>
+                  </entry>
+                </descriptors>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                  <entry>
+                    <key>Mongo URI</key>
+                  </entry>
+                  <entry>
+                    <key>Mongo Database Name</key>
+                  </entry>
+                  <entry>
+                    <key>Mongo Collection Name</key>
+                  </entry>
+                  <entry>
+                    <key>ssl-context-service</key>
+                  </entry>
+                  <entry>
+                    <key>ssl-client-auth</key>
+                    <value>REQUIRED</value>
+                  </entry>
+                  <entry>
+                    <key>Mode</key>
+                    <value>insert</value>
+                  </entry>
+                  <entry>
+                    <key>Upsert</key>
+                    <value>false</value>
+                  </entry>
+                  <entry>
+                    <key>Update Query Key</key>
+                    <value>_id</value>
+                  </entry>
+                  <entry>
+                    <key>Write Concern</key>
+                    <value>ACKNOWLEDGED</value>
+                  </entry>
+                  <entry>
+                    <key>Character Set</key>
+                    <value>UTF-8</value>
+                  </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+              </config>
+              <name>PutMongo</name>
+              <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+              </relationships>
+              <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+              </relationships>
+              <style></style>
+              <type>org.apache.nifi.processors.mongodb.PutMongo</type>
+            </processors>
+          </contents>
           <name>ReTest2</name>
         </processGroups>
       </contents>
       <name>ReTest</name>
     </processGroups>
   </snippet>
-  <timestamp>11/15/2016 20:55:09 PST</timestamp>
+  <timestamp>11/15/2016 21:00:19 PST</timestamp>
 </template>
